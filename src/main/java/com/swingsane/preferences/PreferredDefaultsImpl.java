@@ -20,7 +20,7 @@ public class PreferredDefaultsImpl implements IPreferredDefaults {
    */
   private static final Logger LOG = Logger.getLogger(PreferredDefaultsImpl.class);
 
-  private ColorMode color = ColorMode.BLACK_AND_WHITE;
+  private ColorMode color = ColorMode.COLOR;
   private String pageSize;
   private int pagesToScan = 1;
   private int resolution = DEFAULT_RESOLUTION;
