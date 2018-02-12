@@ -358,7 +358,10 @@ public final class KnownSaneOptions {
       return;
     }
 
-    Constraints depthConstraints = depth.getConstraints();
+    Constraints depthConstraints = null;
+    if (depth != null) {
+      depthConstraints = depth.getConstraints();
+    }
 
     // grayscale
     if (colorMode.toLowerCase().contains("gray") || colorMode.toLowerCase().contains("grey")) {
