@@ -467,6 +467,7 @@ public final class KnownSaneOptions {
       case AUTOMATIC_DOCUMENT_FEEDER:
         if (isAutomaticDocumentFeederString(value)) {
           setSource(scanner, value);
+          setBatchScan(scanner, true);
           return;
         }
         break;

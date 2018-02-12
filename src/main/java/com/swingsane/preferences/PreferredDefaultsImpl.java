@@ -103,13 +103,8 @@ public class PreferredDefaultsImpl implements IPreferredDefaults {
     updateUsingDefaultBlackThreshold(scanner);
     updateDuplexScanning(scanner);
     updateAutoCrop(scanner);
-    updateADFAutoScan(scanner);
     updatePagesToScan(scanner);
     updateUseCustomOptions(scanner);
-  }
-
-  private void updateADFAutoScan(Scanner scanner) {
-    KnownSaneOptions.setBatchScan(scanner, true);
   }
 
   private void updateAutoCrop(Scanner scanner) {
